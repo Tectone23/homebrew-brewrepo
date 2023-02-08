@@ -5,7 +5,7 @@ class Tcli < Formula
   sha256 "a655ceabb4f5caf7f1f47818b1a9ed3985074713c04e25b916490926eb6aafe5"
   license "MIT"
 
-  # depends_on "rust" => :build
+  depends_on "rust" => :build
 
   def install
     system "cargo", "install", "--path"
